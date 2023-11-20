@@ -15,7 +15,7 @@ export default function FeaturedNewsCard(props) {
         >
           {props.numberCount}
         </span>
-        <h3 className="my-1 font-extrabold">{props.title}</h3>
+        <h3 className="my-1 font-extrabold dark:text-white">{props.title}</h3>
         <p className="text-sm text-gray-500">{props.desc}</p>
       </div>
     </li>

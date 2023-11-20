@@ -9,15 +9,15 @@ export default function Home() {
 
 
   return (
-    <>
-      <div className="primary-container pt-28">
+    <div className="dark:bg-dark-gray ">
+      <div className="primary-container pt-28 ">
         <div className="flex flex-col gap-8 lg:flex-row">
           <main className="flex flex-col w-full">
             <picture className="flex-1">
               <source media="(min-width: 640px)" srcSet={mainImgDesktopView} />
               <img className="object-cover w-full h-full" src={mainImgMobileView} />
             </picture>
-            <div className="h-max md:flex md:gap-6 md:pt-7">
+            <div className="h-max md:flex md:gap-6 md:pt-7 dark:text-white">
               <div className="w-full py-4 text-5xl font-bold">
                 <h1>The Bright Future of Web 3.0?</h1>
               </div>
@@ -27,7 +27,7 @@ export default function Home() {
                   the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
                 </p>
-                <button className="px-10 py-3 mt-6 font-medium tracking-widest text-white bg-red-400">
+                <button className="px-10 py-3 mt-6 font-medium tracking-widest text-white bg-red-400 dark:bg-red-700">
                   READ MORE
                 </button>
               </div>
@@ -54,6 +54,6 @@ export default function Home() {
           </ol>
         </section>
       </div>
-    </>
+    </div>
   );
 }
